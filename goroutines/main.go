@@ -20,8 +20,9 @@ func (s *Student) DoHomework() {
 		fmt.Println("do nothing...")
 		return
 	}
-	h := s.RemainCourses[0]
+
 	s.mu.Lock()
+	h := s.RemainCourses[0]
 	if len(s.RemainCourses) == 1 {
 		s.RemainCourses = nil
 	} else {
