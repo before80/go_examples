@@ -16,7 +16,7 @@ func main() {
 	})
 
 	fmt.Println("Waiting...")
-	time.Sleep(3 * time.Second)
+	time.Sleep(2010 * time.Millisecond) // 2.01s > 前面的 2s
 
 	fmt.Println("End")
 }
