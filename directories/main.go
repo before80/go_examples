@@ -1,3 +1,5 @@
+// Note:
+// This code is from https://gobyexample.com.
 package main
 
 import (
@@ -13,7 +15,6 @@ func check(e error) {
 }
 
 func main() {
-
 	err := os.Mkdir("subdir", 0755)
 	check(err)
 

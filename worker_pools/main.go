@@ -1,3 +1,5 @@
+// Note:
+// This code is from https://gobyexample.com.
 package main
 
 import (
