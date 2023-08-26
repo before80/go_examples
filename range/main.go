@@ -135,6 +135,7 @@ func main() {
 	chs <- 3
 
 	close(chs)
+	fmt.Println("------ for ch := range chs ------")
 	for ch := range chs {
 		fmt.Printf("%v,%T\n", ch, ch)
 	}
