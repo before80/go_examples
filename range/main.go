@@ -133,6 +133,7 @@ func main() {
 	chs <- 1
 	chs <- 2
 	chs <- 3
+	// chs <- 4 // 将触发错误：fatal error: all goroutines are asleep - deadlock!
 
 	close(chs)
 	fmt.Println("------ for ch := range chs ------")
