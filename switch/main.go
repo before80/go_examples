@@ -28,10 +28,8 @@ func main() {
 	switch i {
 	case 0:
 		fmt.Println("i is 0.")
-	case 1:
-		fmt.Println("i is 1.")
-	case 2:
-		fmt.Println("i is 2.")
+	case 1, 2:
+		fmt.Println("i is 1 or 2.")
 	default:
 		fmt.Println("i is unknown.")
 	}
@@ -40,10 +38,8 @@ func main() {
 	switch j := rand.Intn(3); j {
 	case 0:
 		fmt.Println("j is 0.")
-	case 1:
-		fmt.Println("j is 1.")
-	case 2:
-		fmt.Println("j is 2.")
+	case 1, 2:
+		fmt.Println("j is 1 or 2.")
 	default:
 		fmt.Println("j is unknown.")
 	}
